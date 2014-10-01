@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>FireTeam | Login</title>
+        <link rel="stylesheet" href="Foundation5/css/foundation.css"/>
+        <link rel="stylesheet" href="css/fireteam.css" />
+        <script src="Foundation5/js/vendor/modernizr.js"></script>
     </head>
+
     <body>
-        <div>Hello Fireteam</div>
+        <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+                <nav class="tab-bar bground">
+                    <section class="middle tab-bar-section">
+                        <h1 class="title">FireTeam</h1>
+                    </section>
+                </nav>
+
+                <section class="main-section">
+                    <div class="row">
+                        <div class="large-2 columns"> </div>
+                        <div class="large-8 large-centered columns">
+                            <br />
+                            <center>
+                                <img class="dLogo" src="img/icon.png" alt="logo"/>
+                            </center>
+                            <br />
+                            <div id="noti"></div>
+                            <label>
+                                <input id="email" type="text" placeholder="Email"/>
+                            </label>
+                            <label>
+                                <input id="password" type="password" placeholder="Password" />
+                            </label>
+                            <center><a class="button radius round" href="#" onclick="lgin('nose')">Login!</a></center>
+                            <br />
+                            <center><img id="loading" style="display: none; width: 30%; heigth: 30%;" src="img/loading.gif" /></center>
+                        </div>
+                        <div class="large-2 columns"> </div>
+                    </div>
+                </section>
+
+                <a class="exit-off-canvas"></a>
+
+            </div>
+        </div>
+        <script src="Foundation5/js/vendor/jquery.js"></script>
+        <script src="Foundation5/js/foundation.min.js"></script>
+        <script>
+                                  $(document).foundation();
+        </script>
     </body>
+
 </html>
